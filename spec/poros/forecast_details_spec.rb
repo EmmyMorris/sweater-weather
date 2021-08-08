@@ -34,13 +34,10 @@ RSpec.describe ForecastDetails do
         expect(fd.daily_weather.first).to have_key(:icon)
 
         expect(fd.hourly_weather).to be_a(Array)
-        expect(fd.hourly_weather.count).to eq(5)
+        expect(fd.hourly_weather.count).to eq(8)
         expect(fd.hourly_weather.first).to be_a(Hash)
-        expect(fd.hourly_weather.first).to have_key(:date)
-        expect(fd.hourly_weather.first).to have_key(:sunrise)
-        expect(fd.hourly_weather.first).to have_key(:sunset)
-        expect(fd.hourly_weather.first).to have_key(:max_temp)
-        expect(fd.hourly_weather.first).to have_key(:min_temp)
+        expect(fd.hourly_weather.first).to have_key(:datetime)
+        expect(fd.hourly_weather.first).to have_key(:temp)
         expect(fd.hourly_weather.first).to have_key(:conditions)
         expect(fd.hourly_weather.first).to have_key(:icon)
       end

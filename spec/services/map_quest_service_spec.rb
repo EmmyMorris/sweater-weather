@@ -6,10 +6,9 @@ RSpec.describe MapQuestService do
     describe '::get_coordinates' do
       it 'can connect to the Map Quest API' do
         VCR.use_cassette("map_quest_coordinates") do
-          city = "denver"
-          state = "co"
+          location = "denver, co"
 
-          response = MapQuestService.get_coordinates(city, state)
+          response = MapQuestService.get_coordinates(location)
 
           expect(response).to be_a(Hash)
           expect(response).to have_key(:info)

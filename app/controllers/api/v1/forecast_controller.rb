@@ -1,5 +1,7 @@
 class Api::V1::ForecastController < ApplicationController
   def index
-     @forecast = ForecastFacade.forecast(city, state)
+    # require "pry"; binding.pry
+    forecast = ForecastFacade.forecast(params[:location])
+    render json: ForecastSerializer.new(forecast), status: 200
   end
 end

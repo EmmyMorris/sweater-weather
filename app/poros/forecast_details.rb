@@ -5,11 +5,10 @@ class ForecastDetails
               :hourly_weather
 
   def initialize(details)
-    require "pry"; binding.pry
     @id = details[:id]
     @current_weather = get_current_weather(details[:current])
     @daily_weather = get_daily_weather(details[:daily][0..4])
-    @hourly_weather = get_hourly_weather(details[:hourly])
+    @hourly_weather = get_hourly_weather(details[:hourly][0..7])
   end
 
   private
@@ -43,14 +42,13 @@ class ForecastDetails
     end
 
     def get_hourly_weather(data)
-      # data.map do |data|
+      data.map do |data|
         {
           datetime: Time.at(data[:dt]).to_date,
           temp: data[:temp],
-          min_temp: data[:temp][:min],
           conditions: data[:weather][0][:description],
           icon: data[:weather][0][:icon]
         }
-      # end
+      end
     end
 end

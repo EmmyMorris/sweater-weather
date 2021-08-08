@@ -1,7 +1,7 @@
 class MapQuestService
 
-  def self.get_coordinates(city, state)
-    new.request_api("/geocoding/v1/address?location=#{city},#{state}")
+  def self.get_coordinates(location)
+    new.request_api("/geocoding/v1/address?location=#{location}")
   end
 
   def request_api(path)

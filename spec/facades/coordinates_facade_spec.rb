@@ -5,7 +5,7 @@ RSpec.describe CoordinatesFacade do
     describe '::coordinates' do
       it 'returns latitude and longitude' do
         VCR.use_cassette("coordinates") do
-          coordinates = CoordinatesFacade.coordinates('denver', 'co')
+          coordinates = CoordinatesFacade.coordinates('denver, co')
 
           expect(coordinates).to be_a(Hash)
           expect(coordinates).to have_key(:lat)
