@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Map Quest API" do
 
   context 'happy paths' do
-    it 'Send current, daily, and hourly weather report' do
+    it 'Send current, daily, and hourly weather report', :vcr do
 
       get "/api/v1/forecast?location=denver,co"
 

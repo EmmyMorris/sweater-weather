@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/onecall?appid=59a95904dccdd87e6f2eec32873b902c&exclude=minutely,hourly,alerts&lat=35&lon=127&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 08 Aug 2021 19:07:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4302'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/onecall?exclude=minutely%2Chourly%2Calerts&lat=35&lon=127&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"lat":35,"lon":127,"timezone":"Asia/Seoul","timezone_offset":32400,"current":{"dt":1628449632,"sunrise":1628455636,"sunset":1628504874,"temp":75.13,"feels_like":76.86,"pressure":1001,"humidity":96,"dew_point":73.9,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":3.65,"wind_deg":24,"wind_gust":3.58,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}]},"daily":[{"dt":1628478000,"sunrise":1628455636,"sunset":1628504874,"moonrise":1628456520,"moonset":1628507700,"moon_phase":0.02,"temp":{"day":87.33,"min":72.19,"max":90.25,"night":72.19,"eve":83.64,"morn":73.24},"feels_like":{"day":91.72,"night":73.38,"eve":88.54,"morn":74.73},"pressure":1002,"humidity":55,"dew_point":68.68,"wind_speed":9.15,"wind_deg":326,"wind_gust":13,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"clouds":0,"pop":0.36,"rain":0.25,"uvi":10.02},{"dt":1628564400,"sunrise":1628542082,"sunset":1628591212,"moonrise":1628546820,"moonset":1628596080,"moon_phase":0.05,"temp":{"day":81.91,"min":69.35,"max":83.12,"night":71.37,"eve":79.16,"morn":69.35},"feels_like":{"day":86.49,"night":72.66,"eve":79.16,"morn":70.45},"pressure":1008,"humidity":71,"dew_point":71.31,"wind_speed":7.23,"wind_deg":132,"wind_gust":8.32,"weather":[{"id":501,"main":"Rain","description":"moderate
+        rain","icon":"10d"}],"clouds":9,"pop":0.88,"rain":8.28,"uvi":9.29},{"dt":1628650800,"sunrise":1628628529,"sunset":1628677549,"moonrise":1628637120,"moonset":1628684340,"moon_phase":0.09,"temp":{"day":87.75,"min":69.76,"max":88.99,"night":72.84,"eve":77,"morn":69.76},"feels_like":{"day":89.94,"night":74.19,"eve":78.21,"morn":70.95},"pressure":1010,"humidity":48,"dew_point":65.55,"wind_speed":7.05,"wind_deg":164,"wind_gust":12.82,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"clouds":97,"pop":0.44,"rain":0.38,"uvi":9.24},{"dt":1628737200,"sunrise":1628714975,"sunset":1628763885,"moonrise":1628727420,"moonset":1628772540,"moon_phase":0.12,"temp":{"day":67.87,"min":66.34,"max":76.26,"night":69.03,"eve":76.26,"morn":66.34},"feels_like":{"day":68.97,"night":70,"eve":77.11,"morn":67.33},"pressure":1005,"humidity":98,"dew_point":66.99,"wind_speed":6.87,"wind_deg":32,"wind_gust":20.15,"weather":[{"id":502,"main":"Rain","description":"heavy
+        intensity rain","icon":"10d"}],"clouds":100,"pop":1,"rain":51.45,"uvi":3.13},{"dt":1628823600,"sunrise":1628801421,"sunset":1628850220,"moonrise":1628817720,"moonset":1628860740,"moon_phase":0.16,"temp":{"day":85.59,"min":66.76,"max":85.59,"night":71.58,"eve":76.12,"morn":66.76},"feels_like":{"day":88.41,"night":72.77,"eve":77.2,"morn":67.69},"pressure":1008,"humidity":54,"dew_point":66.45,"wind_speed":9.15,"wind_deg":144,"wind_gust":12.82,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"clouds":79,"pop":0.24,"uvi":8.88},{"dt":1628910000,"sunrise":1628887867,"sunset":1628936553,"moonrise":1628908140,"moonset":1628949060,"moon_phase":0.19,"temp":{"day":72.18,"min":66.87,"max":75.87,"night":66.87,"eve":67.98,"morn":70.54},"feels_like":{"day":73.13,"night":67.86,"eve":68.85,"morn":71.53},"pressure":1011,"humidity":86,"dew_point":67.3,"wind_speed":10.18,"wind_deg":118,"wind_gust":21.97,"weather":[{"id":501,"main":"Rain","description":"moderate
+        rain","icon":"10d"}],"clouds":100,"pop":1,"rain":6.63,"uvi":9},{"dt":1628996400,"sunrise":1628974314,"sunset":1629022885,"moonrise":1628998620,"moonset":1629037620,"moon_phase":0.23,"temp":{"day":70.21,"min":66.25,"max":71.85,"night":68.95,"eve":70.83,"morn":66.25},"feels_like":{"day":71.31,"night":69.93,"eve":71.92,"morn":67.19},"pressure":1010,"humidity":93,"dew_point":67.55,"wind_speed":5.88,"wind_deg":22,"wind_gust":19.51,"weather":[{"id":501,"main":"Rain","description":"moderate
+        rain","icon":"10d"}],"clouds":100,"pop":1,"rain":16.95,"uvi":9},{"dt":1629082800,"sunrise":1629060760,"sunset":1629109217,"moonrise":1629089280,"moonset":0,"moon_phase":0.25,"temp":{"day":83.48,"min":68.36,"max":83.48,"night":72.19,"eve":77.13,"morn":69.49},"feels_like":{"day":85.73,"night":73.26,"eve":78.39,"morn":70.47},"pressure":1014,"humidity":56,"dew_point":66.11,"wind_speed":7.43,"wind_deg":99,"wind_gust":21.94,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"clouds":100,"pop":0.48,"rain":0.76,"uvi":9}]}'
+  recorded_at: Sun, 08 Aug 2021 19:07:12 GMT
+recorded_with: VCR 6.0.0
