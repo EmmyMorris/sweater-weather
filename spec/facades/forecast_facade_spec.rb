@@ -8,6 +8,7 @@ RSpec.describe ForecastFacade do
 
         expect(forecast.current_weather).to be_a(Hash)
         expect(forecast.daily_weather).to be_a(Array)
+        expect(forecast.hourly_weather).to be_a(Array)
       end
     end
   end
