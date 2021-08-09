@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe BreweryFacade do
   describe 'class methods' do
     it '::brewery' do
-      VCR.use_cassette("brewery_facade_location") do
+      VCR.use_cassette("open_brewery") do
         brewery = BreweryFacade.breweries_by_location('denver, co')
 
         expect(brewery).to be_a Brewery
