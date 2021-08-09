@@ -7,8 +7,8 @@ RSpec.describe OpenBreweryService do
       it 'can connect to the Open Brewery API' do
         VCR.use_cassette("open_brewery") do
           coordinates = "39,-104"
-
-          response = OpenBreweryService.get_brewery_data(coordinates)
+          quantity = "5"
+          response = OpenBreweryService.get_brewery_data(coordinates, quantity)
           expect(response).to be_a(Hash)
           # expect(response[:destination]).to eq(location)
           expect(response[:forecast]).to have_key(:summary)

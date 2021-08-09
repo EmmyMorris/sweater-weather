@@ -1,10 +1,10 @@
 class BreweryFacade
-  def self.location(location)
-    coordinates = CoordinatesFacade.coordinates(location)
-    weather_data = OpenWeatherService.get_forecast_data(coordinates)
-    brewery_data = OpenBreweryService.get_brewery_data(coordinates)
-    brewery_data[0..5].map do |attributes|
-      BreweryDetails.new(attributes)
+  def self.location(coordinates, quantity)
+    brewery_data = OpenBreweryService.get_brewery_data(coordinates, quantity)
+    number = ((quantity.to_i) - 1)
+    brewery_data[0..(number)].map do |attributes|
+      forecast = OpenWeatherService.get_forecast_data(coordinates)
+      BreweryDetails.new(attributes, forecast)
     end
   end
 end

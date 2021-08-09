@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=a8k7m6XH0vJScGY82bDnXhVwsY1cU4TG&location=
+    uri: https://api.openbrewerydb.org/breweries?by_dist=39,-104&quantity=5
     body:
       encoding: US-ASCII
       string: ''
@@ -16,41 +16,93 @@ http_interactions:
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
       Date:
-      - Mon, 09 Aug 2021 17:16:18 GMT
+      - Mon, 09 Aug 2021 17:39:50 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Content-Length:
-      - '382'
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET,POST
-      Access-Control-Allow-Origin:
-      - "*"
+      - application/json; charset=utf-8
       Cache-Control:
-      - no-cache, must-revalidate
-      Expires:
-      - Mon, 20 Dec 1998 01:00:00 GMT
-      Geocodetransactioncount:
-      - '0'
-      Last-Modified:
-      - Mon, 09 Aug 2021 17:16:18 GMT
-      Pragma:
-      - no-cache
-      Reversegeocodetransactioncount:
-      - '0'
-      Set-Cookie:
-      - JSESSIONID=D1DBF97D699C1F966BD0533807924C16; Path=/; HttpOnly
-      Status:
-      - success
-      Transactionweight:
-      - '0.0'
+      - max-age=86400, public
+      Etag:
+      - W/"d0ec178e41dad8e4b0bdb73418a6a9d6"
+      X-Request-Id:
+      - 0f89b083-a69b-4382-8689-7635c63196ee
+      X-Runtime:
+      - '0.034025'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"info":{"statuscode":400,"copyright":{"text":"\u00A9 2021 MapQuest,
-        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2021 MapQuest, Inc."},"messages":["Illegal argument from request: Insufficient
-        info for location"]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":""},"locations":[]}]}'
-  recorded_at: Mon, 09 Aug 2021 17:16:18 GMT
+      string: '[{"id":10322,"obdb_id":"dueces-wild-brewery-colorado-springs","name":"Dueces
+        Wild Brewery","brewery_type":"micro","street":"660 Peterson Rd","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80915-4002","country":"United
+        States","longitude":"-104.7034318","latitude":"38.8877651","phone":"6079729260","website_url":"http://www.dwbbrewery.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":13372,"obdb_id":"peaks-n-pines-brewing-company-colorado-springs","name":"Peaks
+        N Pines Brewing Company","brewery_type":"micro","street":"4005 Tutt Blvd","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80922-2508","country":"United
+        States","longitude":"-104.7146045","latitude":"38.88965993","phone":"7193586758","website_url":"http://www.peaksnpinesbrewery.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":13907,"obdb_id":"rock-bottom-brewery-colorado-springs-colorado-springs","name":"Rock
+        Bottom Brewery - Colorado Springs","brewery_type":"brewpub","street":"3316
+        Cinema Point Dr","address_2":null,"address_3":null,"city":"Colorado Springs","state":"Colorado","county_province":null,"postal_code":"80922","country":"United
+        States","longitude":"-104.718194","latitude":"38.8811909","phone":"7195503586","website_url":"http://www.rockbottom.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":9789,"obdb_id":"cogstone-brewing-co-colorado-springs","name":"Cogstone
+        Brewing Co","brewery_type":"brewpub","street":"3858 Village Seven Rd","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80917-2801","country":"United
+        States","longitude":"-104.75566","latitude":"38.87959595","phone":"7194186595","website_url":"http://www.cogstonebrewing.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":12325,"obdb_id":"lost-friend-brewing-company-colorado-springs","name":"Lost
+        Friend Brewing Company","brewery_type":"micro","street":"2458 Montebello Square
+        Dr","address_2":null,"address_3":null,"city":"Colorado Springs","state":"Colorado","county_province":null,"postal_code":"80918-1974","country":"United
+        States","longitude":"-104.7823626","latitude":"38.9082661","phone":null,"website_url":"http://www.lostfriendbrewing.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":15669,"obdb_id":"whistle-pig-brewing-company-colorado-springs","name":"Whistle
+        Pig Brewing Company","brewery_type":"micro","street":"1840 Dominion Way","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80918-1467","country":"United
+        States","longitude":"-104.7931723","latitude":"38.92372675","phone":"7195981339","website_url":"http://www.whistlepigbrewing.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":9813,"obdb_id":"colorado-mountain-brewery-colorado-springs","name":"Colorado
+        Mountain Brewery","brewery_type":"micro","street":"1110 Interquest Pkwy","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80921-4182","country":"United
+        States","longitude":"-104.8083989","latitude":"38.99103716","phone":"7192717951","website_url":"http://www.cmbrew.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":9203,"obdb_id":"brass-brewing-company-colorado-springs","name":"Brass
+        Brewing Company","brewery_type":"micro","street":"318 E Colorado Ave","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80903-1949","country":"United
+        States","longitude":"-104.8189706","latitude":"38.8326073","phone":null,"website_url":null,"updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":12254,"obdb_id":"local-relic-colorado-springs","name":"Local
+        Relic","brewery_type":"brewpub","street":"320 S Weber St","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80903-2125","country":"United
+        States","longitude":"-104.8203866","latitude":"38.82871975","phone":"7192700077","website_url":"http://www.localrelic.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":11738,"obdb_id":"iron-bird-brewing-co-colorado-springs","name":"Iron
+        Bird Brewing Co.","brewery_type":"brewpub","street":"402 S Nevada Ave","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80903-2110","country":"United
+        States","longitude":"-104.8223799","latitude":"38.8280292","phone":"7194247002","website_url":"http://www.ironbirdbrewing.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":13421,"obdb_id":"phantom-canyon-brewing-co-colorado-springs","name":"Phantom
+        Canyon Brewing Co","brewery_type":"brewpub","street":"2 E Pikes Peak Ave","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80903-1504","country":"United
+        States","longitude":"-104.8249314","latitude":"38.83423935","phone":"7196352800","website_url":"http://www.phantomcanyon.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":10608,"obdb_id":"fh-beerworks-colorado-springs","name":"FH
+        Beerworks","brewery_type":"micro","street":"521 S Tejon St","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80903-3928","country":"United
+        States","longitude":"-104.8237318","latitude":"38.8260086","phone":"7196406814","website_url":null,"updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":10998,"obdb_id":"gold-camp-brewing-co-colorado-springs","name":"Gold
+        Camp Brewing Co","brewery_type":"micro","street":"1007 S Tejon St","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80903-4238","country":"United
+        States","longitude":"-104.823552","latitude":"38.8195724","phone":"7196950344","website_url":null,"updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":9354,"obdb_id":"bristol-brewing-co-colorado-springs","name":"Bristol
+        Brewing Co","brewery_type":"micro","street":"1604 S Cascade Ave","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80905-2237","country":"United
+        States","longitude":"-104.827401","latitude":"38.8108617","phone":"7196332555","website_url":"http://www.bristolbrewing.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":9643,"obdb_id":"cerberus-brewing-company-colorado-springs","name":"Cerberus
+        Brewing Company","brewery_type":"brewpub","street":"702 W Colorado Ave","address_2":null,"address_3":null,"city":"Colorado
+        Springs","state":"Colorado","county_province":null,"postal_code":"80905-1539","country":"United
+        States","longitude":"-104.8374071","latitude":"38.8330574","phone":"7196362337","website_url":"http://www.cerberusbrewingco.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":12469,"obdb_id":"manitou-brewing-company-manitou-springs","name":"Manitou
+        Brewing Company","brewery_type":"brewpub","street":"725 Manitou Ave","address_2":null,"address_3":null,"city":"Manitou
+        Springs","state":"Colorado","county_province":null,"postal_code":"80829-1809","country":"United
+        States","longitude":"-104.9157413","latitude":"38.8569869","phone":"7192827709","website_url":"http://www.manitou-brewing.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":8045,"obdb_id":"105-west-brewing-co-castle-rock","name":"105
+        West Brewing Co","brewery_type":"micro","street":"1043 Park St","address_2":null,"address_3":null,"city":"Castle
+        Rock","state":"Colorado","county_province":null,"postal_code":"80109-1585","country":"United
+        States","longitude":"-104.8667206","latitude":"39.38269495","phone":"3033257321","website_url":"http://www.105westbrewing.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":13958,"obdb_id":"rockyard-brewing-company-castle-rock","name":"Rockyard
+        Brewing Company","brewery_type":"brewpub","street":"880 Castleton Rd","address_2":null,"address_3":null,"city":"Castle
+        Rock","state":"Colorado","county_province":null,"postal_code":"80109-7512","country":"United
+        States","longitude":"-104.8723394","latitude":"39.4096188","phone":"3038149273","website_url":"http://www.rockyard.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":15454,"obdb_id":"ute-pass-brewing-co-woodland-park","name":"Ute
+        Pass Brewing Co","brewery_type":"brewpub","street":"209 E Midland Ave","address_2":null,"address_3":null,"city":"Woodland
+        Park","state":"Colorado","county_province":null,"postal_code":"80863-3101","country":"United
+        States","longitude":"-105.0513357","latitude":"38.9944899","phone":"7196868722","website_url":"http://www.utepassbrewingcompany.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":8845,"obdb_id":"bierwerks-woodland-park","name":"BierWerks","brewery_type":"brewpub","street":"121
+        E. Midland Ave","address_2":null,"address_3":null,"city":"Woodland Park","state":"Colorado","county_province":null,"postal_code":"80863","country":"United
+        States","longitude":"-105.0519462","latitude":"38.9941414","phone":"7196868100","website_url":"http://www.bierwerks.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"}]'
+  recorded_at: Mon, 09 Aug 2021 17:39:50 GMT
 recorded_with: VCR 6.0.0

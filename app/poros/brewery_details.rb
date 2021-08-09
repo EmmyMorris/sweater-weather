@@ -4,9 +4,10 @@ class BreweryDetails
               :breweries
 
   def initialize(attributes)
+    # require "pry"; binding.pry
     # @destination = attributes[:location]
     # @forecast = get_current_weather(attributes[:current])
-    @breweries = get_brewery_data(attributes[:coordinates])
+    @breweries = get_brewery_data(attributes[:coordinates], attributes[:quantity])
   end
 
 private
@@ -25,7 +26,7 @@ private
   #   }
   # end
 
-  def get_brewery_data(data)
+  def get_brewery_data(data, quantity)
     {
       id: data[:id],
       name: data[:name],
