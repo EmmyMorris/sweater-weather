@@ -6,7 +6,7 @@ RSpec.describe OpenWeatherService do
     describe '::get_forecast_data' do
       it 'can connect to the Open Weather API' do
         VCR.use_cassette("open_weather_forecast") do
-          coordinates = { lat: 39, lng: 104 }
+          coordinates = { lat: 39, lng: -104 }
           response = OpenWeatherService.get_forecast_data(coordinates)
 
           expect(response).to be_a(Hash)
