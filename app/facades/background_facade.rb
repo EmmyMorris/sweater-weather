@@ -1,6 +1,6 @@
 class BackgroundFacade
-  def self.get_background(location)
-    background = BackgroundService.get_image(location)
+  def self.get_image(location)
+    background = BackgroundService.get_background(location)
     BackgroundDetails.new(data)
   end
 end
