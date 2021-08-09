@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe "Open Brewery API" do
 
   context 'happy paths' do
-    it 'Sends destination, forecast, and breweries in that city' do
+    it 'Sends destination, forecast, and breweries in that city', :vcr do
 
-      get "/api/v1/breweries?location=denver,co&quantity=5"
+      get "/api/v1/breweries?by_dist=39,-104"
 
       body = JSON.parse(response.body, symbolize_names: true)
 
