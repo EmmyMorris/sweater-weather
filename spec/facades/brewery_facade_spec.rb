@@ -1,22 +1,15 @@
 require 'rails_helper'
 
-RSpec.describe BreweryFacade do
+RSpec.describe BreweriesFacade do
   describe 'class methods' do
-    it '::brewery' do
-      VCR.use_cassette("open_brewery") do
-        brewery = BreweryFacade.location('denver, co', "5")
+    it 'returns city details and breweries' do
+      brewery = BreweriesFacade.get_brewery_data('denver, co', 5)
 
-        expect(brewery).to be_a Brewery
-
-        expect(brewery.destination).to be_an(String)
-        expect(brewery.forecast).to be_a(Hash)
-       	expect(brewery.breweries).to be_a(String)
-       	expect(brewery.breweries.count).to eq(5)
-
-       	expect(brewery.breweries.first[:id]).to be_a(Integer)
-       	expect(brewery.breweries.first[:name]).to be_a(String)
-       	expect(brewery.breweries.first[:brewery_type]).to be_a(String)
-      end
+      expect(brewery).to be_a BreweriesDetails
+      expect(brewery.destination).to be_an(String)
+      expect(brewery.forecast).to be_a(Hash)
+     	expect(brewery.breweries).to be_a(Array)
+     	expect(brewery.breweries.count).to eq(5)
     end
   end
 end

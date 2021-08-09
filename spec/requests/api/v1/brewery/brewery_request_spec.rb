@@ -5,7 +5,7 @@ RSpec.describe "Open Brewery API" do
   context 'happy paths' do
     it 'Sends destination, forecast, and breweries in that city', :vcr do
 
-      get "/api/v1/breweries?by_dist=39,-104&quantity=5"
+      get "/api/v1/breweries?location=denver,co&quantity=5"
 
       body = JSON.parse(response.body, symbolize_names: true)
 
@@ -16,8 +16,8 @@ RSpec.describe "Open Brewery API" do
       expect(body[:data][:attributes]).to have_key(:forecast)
       expect(body[:data][:attributes][:forecast]).to be_a(Hash)
 
-      expect(body[:data]).to have_key(:breweries)
-      expect(body[:data][:breweries]).to be_a(Hash)
+      expect(body[:data][:attributes]).to have_key(:breweries)
+      expect(body[:data][:attributes][:breweries]).to be_a(Array)
     end
   end
 end
