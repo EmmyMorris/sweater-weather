@@ -261,9 +261,13 @@
         "lines": [
           1,
           1,
-          3,
-          3,
-          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
           null,
           null
         ]
@@ -294,8 +298,8 @@
         "lines": [
           1,
           1,
-          6,
-          6,
+          4,
+          3,
           null,
           null
         ]
@@ -505,7 +509,6 @@
           1,
           null,
           1,
-          null,
           1,
           1,
           1,
@@ -522,23 +525,23 @@
           1,
           null,
           1,
-          7,
+          5,
           null,
           null,
           1,
-          7,
-          7,
+          5,
+          5,
           null,
           null,
-          7,
-          null,
-          null,
-          1,
-          7,
+          4,
           null,
           null,
           1,
-          7,
+          4,
+          null,
+          null,
+          1,
+          5,
           null,
           null
         ]
@@ -548,9 +551,15 @@
           1,
           null,
           1,
+          null,
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          null,
           1,
           null,
           1,
@@ -558,12 +567,36 @@
           0,
           0,
           0,
-          null,
           0,
           0,
           0,
           null,
           null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/services/open_brewery_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -623,30 +656,6 @@
           null
         ]
       },
-      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/services/open_brewery_service.rb": {
-        "lines": [
-          1,
-          1,
-          3,
-          null,
-          null,
-          1,
-          3,
-          null,
-          2,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
-          3,
-          null,
-          null
-        ]
-      },
       "/Users/emmymorris/turing/3module/projects/sweater-weather/app/controllers/api/v1/breweries_controller.rb": {
         "lines": [
           1,
@@ -662,45 +671,6 @@
       "/Users/emmymorris/turing/3module/projects/sweater-weather/app/controllers/application_controller.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/poros/brewery_details.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          2,
-          0,
-          0,
-          null,
-          null,
-          1,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -724,6 +694,6 @@
         ]
       }
     },
-    "timestamp": 1628524976
+    "timestamp": 1628527413
   }
 }

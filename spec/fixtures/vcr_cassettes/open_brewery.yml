@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openbrewerydb.org/breweries?by_dist=%7B:lat=%3E39,%20:lng=%3E104%7D&quantity=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 09 Aug 2021 16:42:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - max-age=86400, public
+      Etag:
+      - W/"cfb86f86400762f69cc334d461c2ac1b"
+      X-Request-Id:
+      - 5a2a0a18-30de-4bae-b7b1-96f46da3f7a7
+      X-Runtime:
+      - '0.034682'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":8768,"obdb_id":"beer-me-brewery-eastbourne","name":"Beer Me
+        Brewery","brewery_type":"brewpub","street":"Grand Parade","address_2":null,"address_3":null,"city":"Eastbourne","state":null,"county_province":"East
+        Sussex","postal_code":"BN21 3YN","country":"England","longitude":"0.291598","latitude":"50.767006","phone":"1323729967","website_url":"https://beermebrewery.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":12290,"obdb_id":"long-man-brewery-polegate","name":"The
+        Long Man Brewery","brewery_type":"micro","street":"Church Farm","address_2":null,"address_3":null,"city":"Polegate","state":null,"county_province":"East
+        Sussex","postal_code":"BN26 5RA","country":"England","longitude":"0.160243","latitude":"50.799904","phone":"1323871850","website_url":"https://www.longmanbrewery.com/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":13518,"obdb_id":"polarity-brewing-worthing","name":"Polarity
+        Brewing Ltd","brewery_type":"micro","street":"Abbotts Close","address_2":null,"address_3":null,"city":"Worthing","state":null,"county_province":"West
+        Sussex","postal_code":"BN11 1JB","country":"England","longitude":"-0.375446","latitude":"50.814845","phone":"7872105300","website_url":"http://www.polaritybrewing.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":9348,"obdb_id":"brighton-bier-brewery-brighton","name":"Brighton
+        Bier Brewery","brewery_type":"micro","street":"Roedean Road","address_2":null,"address_3":null,"city":"Brighton","state":null,"county_province":"East
+        Sussex","postal_code":"BN2 5RU","country":"England","longitude":"-0.106288","latitude":"50.817144","phone":"1273567374","website_url":"https://www.brightonbier.com/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":12343,"obdb_id":"loud-shirt-brewing-brighton","name":"Loud
+        Shirt Brewing Co","brewery_type":"micro","street":"Roedean Road","address_2":null,"address_3":null,"city":"Brighton","state":null,"county_province":"East
+        Sussex","postal_code":"BN2 5RU","country":"England","longitude":"-0.106288","latitude":"50.817144","phone":"1273087077","website_url":"https://loudshirtbeer.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":11310,"obdb_id":"hand-brew-brighton","name":"Hand
+        Brew Co Ltd","brewery_type":"brewpub","street":"Upper St. James Street","address_2":null,"address_3":null,"city":"Brighton","state":null,"county_province":"East
+        Sussex","postal_code":"BN2 1JN","country":"England","longitude":"-0.12867","latitude":"50.81986","phone":"1273699595","website_url":"http://www.handbrewpub.com/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":12994,"obdb_id":"north-laine-brewhouse-brighton","name":"North
+        Laine Brewhouse","brewery_type":"brewpub","street":"Gloucester Place","address_2":null,"address_3":null,"city":"Brighton","state":null,"county_province":"East
+        Sussex","postal_code":"BN1 4AA","country":"England","longitude":"-0.13588","latitude":"50.826276","phone":"1273683666","website_url":"https://www.northlaine.pub/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":15517,"obdb_id":"vine-brewery-worthing","name":"The
+        Vine Brewery","brewery_type":"brewpub","street":"High Street","address_2":null,"address_3":null,"city":"Worthing","state":null,"county_province":"West
+        Sussex","postal_code":"BN14 7NN","country":"England","longitude":"-0.393395","latitude":"50.825427","phone":"1903201121","website_url":"http://www.vine-tarring.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":13173,"obdb_id":"old-tree-brewery-brighton","name":"Old
+        Tree Brewery","brewery_type":"micro","street":"Richmond Place","address_2":null,"address_3":null,"city":"Brighton","state":null,"county_province":"East
+        Sussex","postal_code":"BN2 9NA","country":"England","longitude":"-0.134261","latitude":"50.828046","phone":"7413064346","website_url":"https://oldtree.house/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":12089,"obdb_id":"larrikin-beer-hove","name":"Larrikin
+        Beer","brewery_type":"brewpub","street":"Belfast Street","address_2":null,"address_3":null,"city":"Hove","state":null,"county_province":"East
+        Sussex","postal_code":"BN3 3YS","country":"England","longitude":"-0.175401","latitude":"50.830522","phone":"1273241881","website_url":"https://www.urchinpub.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":15382,"obdb_id":"unbarred-brewery-brighton","name":"UnBarred
+        Brewery","brewery_type":"taproom","street":"Elder Place","address_2":null,"address_3":null,"city":"Brighton","state":null,"county_province":"East
+        Sussex","postal_code":"BN1 4GF","country":"England","longitude":"-0.138599","latitude":"50.832867","phone":"1273894563","website_url":"https://www.unbarredbrewery.com/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":9415,"obdb_id":"brzn-brighton","name":"BRZN","brewery_type":"micro","street":"New
+        England Road","address_2":null,"address_3":null,"city":"Brighton","state":null,"county_province":"East
+        Sussex","postal_code":"BN1 4ZR","country":"England","longitude":"-0.140921","latitude":"50.833413","phone":null,"website_url":null,"updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":15587,"obdb_id":"watchmakers-arms-brewery-hove","name":"The
+        Watchmakers Arms Brewery","brewery_type":"micro","street":"Goldstone Villas","address_2":null,"address_3":null,"city":"Hove","state":null,"county_province":"East
+        Sussex","postal_code":"BN3 3RU","country":"England","longitude":"-0.17152","latitude":"50.834247","phone":"1273776307","website_url":"https://www.thewatchmakersarms.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":13448,"obdb_id":"pin-up-beers-brighton","name":"Pin-up
+        Beers Ltd","brewery_type":"micro","street":"Manor Hall Road","address_2":null,"address_3":null,"city":"Brighton","state":null,"county_province":"East
+        Sussex","postal_code":"BN42 4NH","country":"England","longitude":"-0.220415","latitude":"50.835048","phone":"1273411127","website_url":"https://www.pinupbrewingco.com/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":9252,"obdb_id":"brew-studio-lancing","name":"Brew
+        Studio","brewery_type":"micro","street":"Meadowview Road","address_2":null,"address_3":null,"city":"Lancing","state":null,"county_province":"West
+        Sussex","postal_code":"BN15 0HU","country":"England","longitude":"-0.330956","latitude":"50.838777","phone":"7980978350","website_url":"https://www.brewstudio.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":11219,"obdb_id":"gribble-brewery-oving","name":"The
+        Gribble Brewery","brewery_type":"brewpub","street":"Gribble Lane","address_2":null,"address_3":null,"city":"Chichester","state":null,"county_province":"West
+        Sussex","postal_code":"PO20 2BP","country":"England","longitude":"-0.723958","latitude":"50.838143","phone":"1243786893","website_url":"http://gribbleinn.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":8447,"obdb_id":"arundel-brewery-arundel","name":"Arundel
+        Brewery Ltd","brewery_type":"brewpub","street":"Lyminster Road","address_2":null,"address_3":null,"city":"Arundel","state":null,"county_province":"West
+        Sussex","postal_code":"BN17 7QL","country":"England","longitude":"-0.534301","latitude":"50.839971","phone":"1903733111","website_url":"https://www.arundelbrewery.co.uk/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":11011,"obdb_id":"goldmark-craft-beers-arundel","name":"Goldmark
+        Craft Beers LTd","brewery_type":"taproom","street":"The Vinery","address_2":null,"address_3":null,"city":"Arundel","state":null,"county_province":"West
+        Sussex","postal_code":"BN18 9PY","country":"England","longitude":"-0.507102","latitude":"50.84058","phone":"1903297838","website_url":"https://goldmarkbeers.co.uk/?v=79cba1185463","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":9481,"obdb_id":"burning-sky-brewery-lewes","name":"Burning
+        Sky Brewery Ltd","brewery_type":"micro","street":"Place Barn","address_2":null,"address_3":null,"city":"Lewes","state":null,"county_province":"East
+        Sussex","postal_code":"BN8 6LP","country":"England","longitude":"0.087961","latitude":"50.844723","phone":"1273858080","website_url":"https://www.burningskybeer.com/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"},{"id":9296,"obdb_id":"brewing-brothers-hastings","name":"Brewing
+        Brothers Ltd","brewery_type":"brewpub","street":"Queens Road","address_2":null,"address_3":null,"city":"Hastings","state":null,"county_province":"East
+        Sussex","postal_code":"TN34 1RL","country":"England","longitude":"0.584234","latitude":"50.860013","phone":"7985505810","website_url":"https://brewingbrothers.org/","updated_at":"2020-12-30T00:00:00.000Z","created_at":"2020-12-30T00:00:00.000Z"}]'
+  recorded_at: Mon, 09 Aug 2021 16:42:30 GMT
+recorded_with: VCR 6.0.0

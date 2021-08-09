@@ -1,6 +1,6 @@
 class OpenBreweryService
-  def self.get_brewery_data(location, quantity)
-    new.request_api("/breweries?location=#{location}&quantity=#{quantity}")
+  def self.get_brewery_data(coordinates, quantity)
+    new.request_api("/breweries?by_dist=#{coordinates}&quantity=#{quantity}")
   end
 
   def request_api(path)
