@@ -7,12 +7,12 @@ class BooksFacade
     temperature = farenheit(forecast.current_weather[:temperature])
     total_books = book_count(books)
     book_results = format_books(books)
-    details = format_details(location, forecast, temperature, city_breweries)
-    BreweriesDetails.new(details)
+    details = format_details(location, forecast, temperature, total_books, book_results )
+    BookDetails.new(details)
   end
 
   def self.book_count(books)
-    books[:total_books_found]
+    books[:numFound]
   end
 
   def self.farenheit(kelvin)
@@ -20,9 +20,9 @@ class BooksFacade
   end
 
   def self.format_books(books)
-    books.map do |book|
+    books[:docs].map do |book|
       {
-           id: book[:lccn],
+           isbn: book[:lccn],
            title: book[:title],
            publisher: book[:publisher]
          }

@@ -7,9 +7,9 @@ RSpec.describe OpenLibraryService do
       location = "denver, co"
       quantity = 5
       response = OpenLibraryService.get_books(location, quantity)
-
-      expect(response).to be_a(Array)
-      expect(response.count).to eq(5)
+      # require "pry"; binding.pry
+      expect(response[:docs]).to be_a(Array)
+      expect(response[:docs].count).to eq(5)
       # expect(response[:destination]).to eq(location)
       # expect(response[:forecast]).to have_key(:summary)
       # expect(response[:forecast]).to have_key(:temperature)
