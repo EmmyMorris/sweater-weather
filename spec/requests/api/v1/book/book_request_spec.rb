@@ -13,11 +13,23 @@ RSpec.describe "Open Library API" do
 
       expect(body[:data][:attributes]).to have_key(:destination)
       expect(body[:data][:attributes][:destination]).to be_a(String)
+
       expect(body[:data][:attributes]).to have_key(:forecast)
       expect(body[:data][:attributes][:forecast]).to be_a(Hash)
+      expect(body[:data][:attributes][:forecast]).to have_key(:summary)
+      expect(body[:data][:attributes][:forecast]).to have_key(:temperature)
+
+      expect(body[:data][:attributes]).to have_key(:total_books_found)
+      expect(body[:data][:attributes][:total_books_found]).to be_a(Integer)
 
       expect(body[:data][:attributes]).to have_key(:books)
       expect(body[:data][:attributes][:books]).to be_a(Array)
+      expect(body[:data][:attributes][:books][0]).to have_key(:isbn)
+      expect(body[:data][:attributes][:books][0][:isbn]).to be_a(Array)
+      expect(body[:data][:attributes][:books][0]).to have_key(:title)
+      expect(body[:data][:attributes][:books][0][:title]).to be_a(String)
+      expect(body[:data][:attributes][:books][0]).to have_key(:publisher)
+      expect(body[:data][:attributes][:books][0][:publisher]).to be_a(Array)
     end
   end
 end

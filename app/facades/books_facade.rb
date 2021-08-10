@@ -4,19 +4,11 @@ class BooksFacade
     books = OpenLibraryService.get_books(location, quantity)
     data = OpenWeatherService.get_forecast_data(coordinates)
     forecast = ForecastDetails.new(data)
-    temperature = farenheit(forecast.current_weather[:temperature])
-    total_books = book_count(books)
+    temperature = forecast.current_weather[:temperature]
+    total_books = books[:numFound]
     book_results = format_books(books)
     details = format_details(location, forecast, temperature, total_books, book_results )
     BookDetails.new(details)
-  end
-
-  def self.book_count(books)
-    books[:numFound]
-  end
-
-  def self.farenheit(kelvin)
-    ((kelvin - 273.15)* 9/5 +32).round
   end
 
   def self.format_books(books)
