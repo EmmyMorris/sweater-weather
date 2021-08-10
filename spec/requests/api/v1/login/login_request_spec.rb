@@ -11,7 +11,6 @@ RSpec.describe "Sessions API" do
       body = JSON.parse(response.body, symbolize_names: true)
       user = User.find(body[:data][:id].to_i)
 
-
       post '/api/v1/sessions', params: {
         email: "test@example.com",
         password: "password"
