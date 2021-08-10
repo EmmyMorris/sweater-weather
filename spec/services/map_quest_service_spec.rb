@@ -9,7 +9,6 @@ RSpec.describe MapQuestService do
           location = "denver, co"
 
           response = MapQuestService.get_coordinates(location)
-
           expect(response).to be_a(Hash)
           expect(response).to have_key(:info)
           expect(response[:info]).to have_key(:statuscode)
