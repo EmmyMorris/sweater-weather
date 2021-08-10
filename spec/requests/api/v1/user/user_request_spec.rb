@@ -11,28 +11,28 @@ RSpec.describe "User API" do
             password: "password",
             password_confirmation: "password"
           }
-      # require "pry"; binding.pry
-      response = JSON.parse(response.body, symbolize_names: true)
+
+      user = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_successful
       expect(response.content_type).to eq("application/json")
 
-      expect(response[:data]).to have_key(:type)
-      expect(response[:data][:type]).to be_a(String)
-      expect(response[:data][:type]).to eq('users')
-      expect(response[:data]).to have_key(:id)
-      expect(response[:data][:id]).to be_a(String)
-      expect(response[:data]).to have_key(:attributes)
-      expect(response[:data][:attributes]).to be_a(Hash)
-      expect(response[:data][:attributes]).to have_key(:email)
-      expect(response[:data][:attributes][:email]).to be_a(String)
-      expect(response[:data][:attributes]).to have_key(:api_key)
-      expect(response[:data][:attributes][:api_key]).to be_a(String)
+      expect(user[:data]).to have_key(:type)
+      expect(user[:data][:type]).to be_a(String)
+      expect(user[:data][:type]).to eq('users')
+      expect(user[:data]).to have_key(:id)
+      expect(user[:data][:id]).to be_a(String)
+      expect(user[:data]).to have_key(:attributes)
+      expect(user[:data][:attributes]).to be_a(Hash)
+      expect(user[:data][:attributes]).to have_key(:email)
+      expect(user[:data][:attributes][:email]).to be_a(String)
+      expect(user[:data][:attributes]).to have_key(:api_key)
+      expect(user[:data][:attributes][:api_key]).to be_a(String)
 
 
-      user = User.last
-      expect(user).to be_a(User)
-      expect(user.email).to eq(params[:email])
-      expect(user.api_key).to be_a(String)
+      user_last = User.last
+      expect(user_last).to be_a(User)
+      expect(user_last.email).to eq("test@example.com")
+      expect(user_last.api_key).to be_a(String)
     end
   end
 
