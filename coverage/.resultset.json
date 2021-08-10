@@ -339,6 +339,7 @@
           2,
           2,
           2,
+          2,
           null,
           null
         ]
@@ -347,7 +348,9 @@
         "lines": [
           1,
           1,
+          1,
           null,
+          1,
           1,
           1,
           null
@@ -568,9 +571,9 @@
           null,
           null,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -745,6 +748,14 @@
       "/Users/emmymorris/turing/3module/projects/sweater-weather/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -774,8 +785,31 @@
           1,
           null
         ]
+      },
+      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1628563066
+    "timestamp": 1628565211
   }
 }

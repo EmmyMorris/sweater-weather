@@ -6,7 +6,7 @@ RSpec.describe "User API" do
       User.destroy_all
     end
     it "a new user can be created" do
-      post "/api/v1/users",  params = {
+      post "/api/v1/users",  params: {
             "email": "test@example.com",
             "password": "password",
             "password_confirmation": "password"
