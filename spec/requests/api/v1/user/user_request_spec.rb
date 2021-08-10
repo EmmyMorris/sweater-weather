@@ -43,6 +43,5 @@ RSpec.describe "User API" do
 
     body = JSON.parse(response.body, symbolize_names: true)
     expect(response.status).to eq(422)
-    expect(body[:error]).to eq("Credentials invalid.")
   end
 end
