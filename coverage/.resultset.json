@@ -532,16 +532,16 @@
           1,
           1,
           1,
-          0,
+          1,
           null,
           1,
-          0,
+          1,
           null,
           null,
           null,
           null,
           null,
-          0,
+          1,
           0,
           0,
           null,
@@ -789,23 +789,31 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          0,
-          null,
-          1,
-          null,
-          null,
-          null,
+          2,
+          2,
           1,
           null,
           1,
+          null,
+          null,
+          null,
           1,
           null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/serializers/users_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1628566781
+    "timestamp": 1628626043
   }
 }

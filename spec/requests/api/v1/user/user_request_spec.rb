@@ -5,7 +5,7 @@ RSpec.describe "User API" do
     before(:each) do
       User.destroy_all
     end
-    xit "a new user can be created" do
+    it "a new user can be created" do
       post "/api/v1/users",  params: {
             email: "test@example.com",
             password: "password",
