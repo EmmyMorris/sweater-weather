@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/search/photos?client_id=5UDO474HfcP-Vr5z_-mfG_rxTBa4YpA49Ov8-h_HgBE&content_filter=high&per_page=1&query=denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1172'
+      Server:
+      - Cowboy
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Warning:
+      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
+      Link:
+      - <https://api.unsplash.com/search/photos?client_id=5UDO474HfcP-Vr5z_-mfG_rxTBa4YpA49Ov8-h_HgBE&content_filter=high&page=2826&per_page=1&query=denver>;
+        rel="last", <https://api.unsplash.com/search/photos?client_id=5UDO474HfcP-Vr5z_-mfG_rxTBa4YpA49Ov8-h_HgBE&content_filter=high&page=2&per_page=1&query=denver>;
+        rel="next"
+      X-Total:
+      - '2826'
+      X-Per-Page:
+      - '1'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"1ab3d2bfb555c8e12b18778ac98327f0"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '46'
+      X-Request-Id:
+      - a6f7a477-be99-4c2d-963a-0b5234cf0200
+      X-Runtime:
+      - '0.077544'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 10 Aug 2021 00:49:17 GMT
+      Age:
+      - '497'
+      X-Served-By:
+      - cache-dca17734-DCA, cache-den8274-DEN
+      X-Cache:
+      - HIT, HIT
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1628556558.520243,VS0,VE1
+      Vary:
+      - Accept-Encoding, Origin,Authorization,client-geo-region
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":2826,"total_pages":2826,"results":[{"id":"NflJmUuaYVI","created_at":"2020-10-15T18:26:07-04:00","updated_at":"2021-08-09T06:19:46-04:00","promoted_at":null,"width":5100,"height":3400,"color":"#737373","blur_hash":"LREf+-kBo}V[cIt7ozR%k?fhkCWC","description":"Daybreak
+        over downtown Denver with a view of the Rocky Mountains to the west","alt_description":"aerial
+        view of city buildings during daytime","urls":{"raw":"https://images.unsplash.com/photo-1602800458591-eddda28a498b?ixid=MnwyNTI1ODV8MHwxfHNlYXJjaHwxfHxkZW52ZXJ8ZW58MXx8fHwxNjI4NTU2MDU5\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1602800458591-eddda28a498b?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyNTI1ODV8MHwxfHNlYXJjaHwxfHxkZW52ZXJ8ZW58MXx8fHwxNjI4NTU2MDU5\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1602800458591-eddda28a498b?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNTI1ODV8MHwxfHNlYXJjaHwxfHxkZW52ZXJ8ZW58MXx8fHwxNjI4NTU2MDU5\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1602800458591-eddda28a498b?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNTI1ODV8MHwxfHNlYXJjaHwxfHxkZW52ZXJ8ZW58MXx8fHwxNjI4NTU2MDU5\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1602800458591-eddda28a498b?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNTI1ODV8MHwxfHNlYXJjaHwxfHxkZW52ZXJ8ZW58MXx8fHwxNjI4NTU2MDU5\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/NflJmUuaYVI","html":"https://unsplash.com/photos/NflJmUuaYVI","download":"https://unsplash.com/photos/NflJmUuaYVI/download","download_location":"https://api.unsplash.com/photos/NflJmUuaYVI/download?ixid=MnwyNTI1ODV8MHwxfHNlYXJjaHwxfHxkZW52ZXJ8ZW58MXx8fHwxNjI4NTU2MDU5"},"categories":[],"likes":15,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"user":{"id":"iReUjmhpLcw","updated_at":"2021-08-09T19:18:50-04:00","username":"andrewcoop","name":"Andrew
+        Coop","first_name":"Andrew","last_name":"Coop","twitter_username":null,"portfolio_url":null,"bio":"I''m
+        an amateur who likes to shoot just about everything that looks interesting.  I
+        want to get more experience with portraiture, and will shoot personal photos
+        for anyone for free.  Where possible, attribution is appreciated please and
+        thank you.","location":"Aurora, CO, USA","links":{"self":"https://api.unsplash.com/users/andrewcoop","html":"https://unsplash.com/@andrewcoop","photos":"https://api.unsplash.com/users/andrewcoop/photos","likes":"https://api.unsplash.com/users/andrewcoop/likes","portfolio":"https://api.unsplash.com/users/andrewcoop/portfolio","following":"https://api.unsplash.com/users/andrewcoop/following","followers":"https://api.unsplash.com/users/andrewcoop/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1623106766393-2f16aecfe7b9image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1623106766393-2f16aecfe7b9image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1623106766393-2f16aecfe7b9image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":null,"total_collections":0,"total_likes":36,"total_photos":239,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":null,"portfolio_url":null,"twitter_username":null,"paypal_email":null}},"tags":[{"type":"search","title":"denver"},{"type":"search","title":"co"},{"type":"search","title":"usa"}]}]}'
+  recorded_at: Tue, 10 Aug 2021 00:49:17 GMT
+recorded_with: VCR 6.0.0

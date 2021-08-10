@@ -16,6 +16,7 @@ VCR.configure do |c|
   c.filter_sensitive_data('<mapquest_key>') { ENV['mapquest_key'] }
   c.filter_sensitive_data('<openweather_key>') { ENV['openweather_key'] }
 end
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
