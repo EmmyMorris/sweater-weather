@@ -554,6 +554,7 @@
         ]
       },
       "/Users/emmymorris/turing/3module/projects/sweater-weather/spec/requests/api/v1/brewery/brewery_request_spec.rb": {
+      "/Users/emmymorris/turing/3module/projects/sweater-weather/spec/requests/api/v1/background/background_request_spec.rb": {
         "lines": [
           1,
           null,
@@ -572,7 +573,10 @@
           1,
           1,
           1,
-          null,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           null,
@@ -754,7 +758,57 @@
           null
         ]
       },
-      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/controllers/api/v1/breweries_controller.rb": {
+      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/services/background_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/poros/background_details.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/controllers/api/v1/backgrounds_controller.rb": {
         "lines": [
           1,
           1,
@@ -776,6 +830,10 @@
           1,
           1,
           2,
+          1,
+      "/Users/emmymorris/turing/3module/projects/sweater-weather/app/serializers/background_serializer.rb": {
+        "lines": [
+          1,
           1,
           1,
           null
@@ -801,6 +859,6 @@
         ]
       }
     },
-    "timestamp": 1628541209
+    "timestamp": 1628557392
   }
 }
