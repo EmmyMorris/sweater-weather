@@ -2,9 +2,6 @@ require "rails_helper"
 
 RSpec.describe "User API" do
   describe 'User can be created' do
-    before(:each) do
-      User.destroy_all
-    end
     it "a new user can be created" do
       post "/api/v1/users",  params: {
             email: "test@example.com",
@@ -28,7 +25,6 @@ RSpec.describe "User API" do
       expect(user[:data][:attributes]).to have_key(:api_key)
       expect(user[:data][:attributes][:api_key]).to be_a(String)
 
-
       user_last = User.last
       expect(user_last).to be_a(User)
       expect(user_last.email).to eq("test@example.com")
@@ -40,7 +36,6 @@ RSpec.describe "User API" do
     post "/api/v1/users", params: {
       email: "test@example.com"
     }
-
     body = JSON.parse(response.body, symbolize_names: true)
     expect(response.status).to eq(422)
     expect(body[:error]).to eq("Invalid Credentials.")
