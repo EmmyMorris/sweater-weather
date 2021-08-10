@@ -13,13 +13,6 @@ RSpec.describe CoordinatesFacade do
           expect(coordinates).to_not have_key(:locations)
         end
       end
-
-      it 'coordinates missing' do
-        coordinates = CoordinatesFacade.coordinates('')
-
-        expect(coordinates).to be_an_instance_of(String)
-        expect(coordinates).to eq('Coordinates Invalid')
-      end
     end
   end
 end

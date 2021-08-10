@@ -10,12 +10,5 @@ RSpec.describe ForecastFacade do
         expect(forecast.daily_weather).to be_a(Array)
       end
     end
-
-    it 'location missing' do
-      forecast = ForecastFacade.forecast('denver, co')
-
-      expect(coordinates).to be_an_instance_of(String)
-      expect(coordinates).to eq('Location Invalid')
-    end
   end
 end
