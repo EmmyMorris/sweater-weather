@@ -1,7 +1,7 @@
 class BooksFacade
   def self.get_book_data(location, quantity)
     coordinates = CoordinatesFacade.coordinates(location)
-    books = OpenLibraryService.get_books(coordinates, quantity)
+    books = OpenLibraryService.get_books(location, quantity)
     data = OpenWeatherService.get_forecast_data(coordinates)
     forecast = ForecastDetails.new(data)
     temperature = farenheit(forecast.current_weather[:temperature])
@@ -39,5 +39,5 @@ class BooksFacade
       total_books_found: total_books,
       books: book_results
     }
-  end 
+  end
 end
