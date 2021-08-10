@@ -4,10 +4,7 @@ class Api::V1::UsersController < ApplicationController
     if user.save
       render json: UsersSerializer.new(user), status: 201
     else
-      render json: {
-      message: 'Invalid',
-      errors: user.errors.map { |_attr, msg| msg }
-      }, status: 422
+      render json: { error: "Invalid Credentials." }, status: 422
     end
   end
 

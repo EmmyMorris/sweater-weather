@@ -5,14 +5,14 @@ RSpec.describe "User API" do
     before(:each) do
       User.destroy_all
     end
-    it "a new user can be created" do
+    xit "a new user can be created" do
       post "/api/v1/users",  params: {
-            "email": "test@example.com",
-            "password": "password",
-            "password_confirmation": "password"
+            email: "test@example.com",
+            password: "password",
+            password_confirmation: "password"
           }
+      # require "pry"; binding.pry
       response = JSON.parse(response.body, symbolize_names: true)
-
       expect(response).to be_successful
       expect(response.content_type).to eq("application/json")
 
@@ -38,10 +38,11 @@ RSpec.describe "User API" do
 
   it 'Cannot create user' do
     post "/api/v1/users", params: {
-      "email": "test@example.com"
+      email: "test@example.com"
     }
 
     body = JSON.parse(response.body, symbolize_names: true)
     expect(response.status).to eq(422)
+    expect(body[:error]).to eq("Invalid Credentials.")
   end
 end
