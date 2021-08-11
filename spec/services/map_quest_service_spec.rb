@@ -13,6 +13,8 @@ RSpec.describe MapQuestService do
           expect(response).to have_key(:info)
           expect(response[:info]).to have_key(:statuscode)
           expect(response[:results].first).to have_key(:providedLocation)
+
+          
         end
       end
     end
