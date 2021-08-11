@@ -49,110 +49,55 @@ Run `bundle exec rspec` to run the test suite
 - GET /api/v1/forecast
 > Get forcast for location
 > PATH PARAMETERS- :location(string)- REQUIRED
+
 > Example request:
 ```rb
-http://localhost:3000/api/v1/forecast?location=denver,co
+GET /api/v1/forecast?location=denver,co
+Content-Type: application/json
+Accept: application/json
 ```
 > Example response:
 ```rb
 {
-    "data": {
-        "id": null,
-        "type": "forecast",
-        "attributes": {
-            "id": null,
-            "current_weather": {
-                "datetime": "2021-08-10 21:12:15 -0600",
-                "sunrise": "06:07",
-                "sunset": "20:02",
-                "temperature": 79.07,
-                "feels_like": 79.07,
-                "humidity": 24,
-                "uvi": 0,
-                "visibility": 10000,
-                "conditions": "scattered clouds",
-                "icon": "03n"
-            },
-            "daily_weather": [
-                {
-                    "date": "2021-08-10",
-                    "sunrise": "06:07",
-                    "sunset": "20:02",
-                    "max_temp": 94.71,
-                    "min_temp": 71.51,
-                    "conditions": "clear sky",
-                    "icon": "01d"
-                },
-                {
-                    "date": "2021-08-11",
-                    "sunrise": "06:08",
-                    "sunset": "20:01",
-                    "max_temp": 97.09,
-                    "min_temp": 72.73,
-                    "conditions": "clear sky",
-                    "icon": "01d"
-                },
-                {
-                    "date": "2021-08-12",
-                    "sunrise": "06:09",
-                    "sunset": "20:00",
-                    "max_temp": 87.73,
-                    "min_temp": 75.13,
-                    "conditions": "overcast clouds",
-                    "icon": "04d"
-                },
-                {
-                    "date": "2021-08-13",
-                    "sunrise": "06:10",
-                    "sunset": "19:59",
-                    "max_temp": 93.45,
-                    "min_temp": 70.39,
-                    "conditions": "light rain",
-                    "icon": "10d"
-                },
-                {
-                    "date": "2021-08-14",
-                    "sunrise": "06:11",
-                    "sunset": "19:57",
-                    "max_temp": 94.26,
-                    "min_temp": 69.94,
-                    "conditions": "few clouds",
-                    "icon": "02d"
-                }
-            ],
-            "hourly_weather": [
-                {
-                    "datetime": "2021-08-10",
-                    "temp": 79.07,
-                    "conditions": "scattered clouds",
-                    "icon": "03n"
-                },
-                {
-                    "datetime": "2021-08-10",
-                    "temp": 79.92,
-                    "conditions": "scattered clouds",
-                    "icon": "03n"
-                },
-                {
-                    "datetime": "2021-08-10",
-                    "temp": 80.24,
-                    "conditions": "scattered clouds",
-                    "icon": "03n"
-                },
-                { ... same format for other hours  ... }
-                }
-            ]
-        }
+  "data": {
+    "id": null,
+    "type": "forecast",
+    "attributes": {
+      "current_weather": {
+        "datetime": "2020-09-30 13:27:03 -0600",
+        "temperature": 79.4,
+        etc
+      },
+      "daily_weather": [
+        {
+          "date": "2020-10-01",
+          "sunrise": "2020-10-01 06:10:43 -0600",
+          etc
+        },
+        {...} etc
+      ],
+      "hourly_weather": [
+        {
+          "time": "14:00:00",
+          "conditions": "cloudy with a chance of meatballs",
+          etc
+        },
+        {...} etc
+      ]
     }
+  }
 }
 ```
 **Backgrounds**
 - GET /api/v1/backgrounds
 > Get a background
 > PATH PARAMETERS- :location(string)- REQUIRED
+
 > Example request:
 ```rb
-http://localhost:3000/api/v1/backgrounds?location=denver,co
+GET /api/v1/backgrounds?location=denver,co
+Content-Type: application/json
+Accept: application/json
 ```
 > Example response:
 ```rb
@@ -176,6 +121,7 @@ http://localhost:3000/api/v1/backgrounds?location=denver,co
 **Users**
 - POST /api/v1/users
 > Create a user
+
 > Example request:
 ```rb
 POST /api/v1/users
@@ -203,7 +149,8 @@ Accept: application/json
 ```
 **Sessions**
 - POST /api/v1/sessions
-> Create a session
+> Creates a session
+
 > Example request:
 ```rb
 POST /api/v1/sessions
@@ -232,7 +179,8 @@ Accept: application/json
 **Road Trips**
 - POST /api/v1/road_trip
 > Get a route given two locations
-> > PATH PARAMETERS- :origin(string)- REQUIRED, :destination(string)- REQUIRED
+> PATH PARAMETERS- :origin(string)- REQUIRED, :destination(string)- REQUIRED
+
 > Example request:
 ```rb
 POST /api/v1/road_trip
