@@ -10,8 +10,8 @@ RSpec.describe RoadTripFacade do
         expect(road_trip.start_city).to be_a(String)
         expect(road_trip.end_city).to be_a(String)
         expect(road_trip.travel_time).to be_a(String)
-        expect(road_trip.weather_at_eta.temperature).to be_a(Integer)
-        expect(road_trip.weather_at_eta.conditions).to be_a(String)
+        expect(road_trip.weather_at_eta[:temperature]).to be_a(String)
+        expect(road_trip.weather_at_eta[:conditions]).to be_a(String)
       end
     end
   end
