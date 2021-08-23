@@ -1,5 +1,5 @@
-# Sweater Weather
-## About
+# Sweater Weather [![Build Status](https://app.travis-ci.com/EmmyMorris/sweater-weather.svg?branch=main)](https://app.travis-ci.com/EmmyMorris/sweater-weather)
+## About 
 Project Description
 You are a back-end developer working on a team that is building an application to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination.
 
@@ -214,7 +214,6 @@ body:
 }
 ```
 
-## Contact
-Created by
+## Authors
 
-* Emmy Morris [GitHub](https://github.com/EmmyMorris) • [LinkedIn](https://www.linkedin.com/in/EmmyMorris/)
+- Emmy Morris - [emmymorris](https://github.com/EmmyMorris)
