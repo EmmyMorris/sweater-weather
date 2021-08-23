@@ -20,13 +20,6 @@ Your team is working in a service-oriented architecture. The front-end will comm
   openweather_key: your_api_key
   unsplash_key: your_api_key
   ```
-  
-  ## Versions
-
-- Ruby 2.7.2
-
-- Rails 5.2.6
-
 
 ## Important Gems
 Testing
@@ -213,6 +206,13 @@ body:
   }
 }
 ```
+
+## Versions
+
+- Ruby 2.7.2
+
+- Rails 5.2.6
+
 
 ## Authors
 
